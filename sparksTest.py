@@ -13,7 +13,7 @@ time.sleep(10)
 # 1.navigation bar is present or not
 # 2.logo is present or not
 # 3.does the link in footer of the page W3layouts is correct
-# /html/body/div[1]/div/div[2]/nav/div[1]/button
+
 navpres = driver.find_element(By.XPATH,"/html/body/div[1]/div/div[2]/nav")
 if(navpres != None):
 	print("yes, The navigationbar is present...")
@@ -77,8 +77,8 @@ else:
 	print("no, The Student Mentorship Program option is not clicking...")
 
 # contact us page
-# 8.zoom in button draggable or not
-# 9.zoom out button is present or not
+# 8.mobile icon is present on contact option or not
+# 9.the map icon is present on Address option or not
 driver.find_element(By.XPATH,"/html/body/div[1]/div/div[2]/nav/div[2]/nav/ul/li[6]/a").click()
 time.sleep(5)
 icon = driver.find_element(By.XPATH,"/html/body/div[2]/div/div/div[3]/div[1]/i")

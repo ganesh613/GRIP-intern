@@ -37,7 +37,7 @@ else:
 time.sleep(5)
 # Tests in the LINKS page https://www.thesparksfoundationsingapore.org/links/software-and-app/
 # 4.checking the name (inner title ) of the page is correct
-# 5.checking whether it has top hover icon or 
+# 5.checking whether it has top hover icon or not
 
 driver.find_element(By.XPATH,"/html/body/div[1]/div/div[2]/nav/div[2]/nav/ul/li[4]/a").click()
 time.sleep(1)
@@ -107,4 +107,4 @@ if(submit):
 else:
 	print("no, The submit option is not present")
 time.sleep(10)
-# driver.close()
+driver.close()
